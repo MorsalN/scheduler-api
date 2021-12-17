@@ -13,7 +13,10 @@ SELECT time, id as day_id FROM days, times ORDER BY day_id, time;
 INSERT INTO interviewers (name, avatar)
 VALUES
   ('Sylvia Palmer', 'https://i.imgur.com/LpaY82x.png'),
-  ('Tori Malcolm', 'https://i.imgur.com/Nmx0Qxo.png');
+  ('Tori Malcolm', 'https://i.imgur.com/Nmx0Qxo.png')
+  ("Mildred Nazir", "https://i.imgur.com/T2WwVfS.png" )
+  ("Cohana Roy", "https://i.imgur.com/FK8V841.jpg")
+  ("Sven Jones", "https://i.imgur.com/twYrpay.jpg");
 
 INSERT INTO available_interviewers (day_id, interviewer_id)
 SELECT 1 as day_id, interviewers.interviewer_id FROM ( SELECT id AS interviewer_id FROM interviewers ) interviewers;
